@@ -671,6 +671,67 @@ xkb_symbols "dvorak-mac" {
     include "level3(ralt_switch)"
 };
 
+// Arno's Engram keyboard layout
+// https://github.com/binarybottle/engram
+partial alphanumeric_keys
+xkb_symbols "engram"
+{
+	include "us(basic)"
+	name[Group1]= "English (Engram)";
+
+	key <TLDE> { [  bracketleft,    braceleft ] }; 
+	key <AE01> { [            1,          bar ] };
+    key <AE02> { [            2,        equal ] };
+	key <AE03> { [            3,   asciitilde ] };
+	key <AE04> { [            4,         plus ] };
+	key <AE05> { [            5,         less ] };
+	key <AE06> { [            6,      greater ] };
+	key <AE07> { [            7,  asciicircum ] };
+	key <AE08> { [            8,    ampersand ] };
+	key <AE09> { [            9,      percent ] };
+	key <AE10> { [            0,     asterisk ] };
+	key <AE11> { [ bracketright,   braceright ] };
+    key <AE12> { [        slash,    backslash ] };
+
+
+	key <AD01> { [            b,            B ] };
+	key <AD02> { [            y,            Y ] };
+	key <AD03> { [            o,            O ] };
+	key <AD04> { [            u,            U ] };
+	key <AD05> { [   apostrophe,    parenleft ] };
+	key <AD06> { [     quotedbl,   parenright ] };
+	key <AD07> { [            l,            L ] };
+	key <AD08> { [            d,            D ] };
+	key <AD09> { [            w,            W ] };
+	key <AD10> { [            v,            V ] };
+	key <AD11> { [            z,            Z ] };
+	key <AD12> { [   numbersign,       dollar ] };
+	key <BKSL> { [           at,        grave ] };
+
+	key <AC01> { [            c,            C ] };
+	key <AC02> { [            i,            I ] };
+	key <AC03> { [            e,            E ] };
+	key <AC04> { [            a,            A ] };
+	key <AC05> { [        comma,    semicolon ] };
+	key <AC06> { [       period,        colon ] };
+	key <AC07> { [            h,            H ] };
+	key <AC08> { [            t,            T ] };
+	key <AC09> { [            s,            S ] };
+	key <AC10> { [            n,            N ] };
+	key <AC11> { [            q,            Q ] };
+
+	key <AB01> { [            g,            G ] };
+	key <AB02> { [            x,            X ] };
+	key <AB03> { [            j,            J ] };
+	key <AB04> { [            k,            K ] };
+	key <AB05> { [        minus,   underscore ] };
+	key <AB06> { [     question,       exclam ] };
+	key <AB07> { [            r,            R ] };
+	key <AB08> { [            m,            M ] };
+	key <AB09> { [            f,            F ] };
+	key <AB10> { [            p,            P ] };
+};
+
 // phonetic layout for Russian letters on an US keyboard
 // by Ivan Popov <pin@konvalo.org> 2005-07-17
 
